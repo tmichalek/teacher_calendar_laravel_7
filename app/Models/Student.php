@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    protected $table='student';
+
     protected $primaryKey='id_student';
 
     public function grade()
