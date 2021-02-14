@@ -18,4 +18,9 @@ class Student extends Model
     {
         return $this->belongsToMany('App/Models/Rating', 'id_rating');
     }
+
+    public function user()
+    {
+        return $this->hasOne('App/Users');
+    }
 }

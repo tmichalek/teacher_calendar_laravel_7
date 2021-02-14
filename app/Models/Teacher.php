@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Teacher extends Model
 {
     protected $primaryKey='id_teacher';
+    protected $attributes=[
+        'userKind'=>'t'
+    ];
 
 
     public function grade()
