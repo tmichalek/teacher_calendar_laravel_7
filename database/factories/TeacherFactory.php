@@ -9,7 +9,7 @@ $factory->define(Teacher::class, function (Faker $faker) {
     return [
         'Name'=>$faker->firstName,
         'Surname'=>$faker->lastName,
-        'id_user'=>$faker->randomDigitNotNull(),
+        'id_user'=>$faker->numberBetween(1,10),
         'created_at'=>$faker->dateTimeBetween('-1 week', '+1 week'),
         'updated_at'=>$faker->dateTimeBetween('-1 week', '+1 week'),
     ];
