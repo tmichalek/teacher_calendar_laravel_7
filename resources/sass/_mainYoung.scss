@@ -1,0 +1,271 @@
+@import 'variables';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    //background-color: rgb(67,67,67);
+    background-image: url('/images/background.png');
+ 
+    
+    .navbar_top{
+        position: fixed;
+        width: 100%;
+        height:10vh;
+        background-color:rgb(82, 99, 119);
+        display: flex;
+        //align-items:flex-start;
+        justify-content: space-between;
+        color: white;
+
+        
+
+       .menuItem {
+           width: 45%;
+           list-style-type: none;
+           padding-left: 4px;
+        //    display: flex;
+        //    align-items:flex-end;
+        i{
+            padding: 2px;
+        }
+        
+        }
+
+        .login{
+            width: 45%;
+            list-style-type: none;
+            display: flex;
+            justify-content:flex-end;
+            align-items: center;
+            padding-right: 6px;
+            i{
+                padding: 2px;
+            }
+        }
+    }
+
+
+    .board{
+        height: 40vh;
+        width: 60vh;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .menu{
+            
+            display: flex;
+            flex-direction: column;
+            
+            font-size: 20px;
+            font-family: 'Homemade Apple', cursive;
+            color:rgb(184, 64, 130);
+            position: absolute;
+            width: 40%;
+            height: 70%;
+            top:20%;
+            left:20%;
+            div{
+                visibility: hidden;
+                padding: 5px;
+                animation: subject 5s 3s forwards;
+            }
+            
+        }
+    
+    }
+
+    .desk1{
+        position: absolute;
+        height: 25vh;
+        width: 25vh;
+        bottom:10%;
+    }
+
+    .window1{
+
+        position: absolute;
+        //position: relative;
+        height: 25vh;
+        width: 25vh;
+        top: 50%;
+        transform: translate(0,-50%);
+        
+      
+    }
+
+    .desk2{
+        position: absolute;
+        height: 25vh;
+        width: 25vh;
+        bottom:10%;
+        right:15%
+    }
+
+    .window2{
+
+        position: absolute;
+        //position: relative;
+        height: 25vh;
+        width: 25vh;
+        top: 50%;
+        transform: translate(0,-50%);
+        right:15% ;
+        
+      
+    }
+
+    .clock{
+        position: absolute;
+        left:25%;
+        top: 35%;
+        width: 15vh;
+        height: 15vh;
+        visibility: hidden;
+       
+        :nth-child(1){
+            visibility: visible;
+            position: absolute;
+            //width: 15vh;
+            //height: 15vh;
+            // left:25%;
+            // top: 40%; 
+            animation: $clock_animation
+             
+            
+        }
+        :nth-child(2){
+            position: absolute;
+            // left:25%;
+            // top: 40%; 
+            animation: $clock_animation 0.4s;
+           // animation-delay:0.4s ; 
+             
+        }
+        :nth-child(3){
+            position: absolute;
+        //    left:25%;
+        //    top: 40%; 
+            animation: $clock_animation  0.8s ; 
+            //animation-delay:0.8s ;
+        }
+        :nth-child(4){
+           position: absolute;
+            animation: $clock_animation  1.2s;
+            //animation-delay: 1.2s ;
+        }
+        :nth-child(5){
+           position: absolute;
+            animation: $clock_animation  1.6s;
+            //animation-delay: 1.6s ;
+          
+        }
+        :nth-child(6){
+            position: absolute;
+            animation: eight_clock 2s 2s forwards ;           
+        }
+        
+    }
+    
+    .bell{
+        transform-origin: 50% 0;
+        visibility: hidden;
+        position: absolute;
+        top:25%;
+        right:25%;
+        width: 10vh;
+        height: 10vh;
+        img{
+            width: 100%;
+            height: 100%;
+            animation: bellRing 3s 2.5s;
+        }
+    }
+
+    
+}
+
+//animations
+
+@keyframes clockwise
+{
+    0%{
+        
+        visibility: visible;  
+        
+    }
+    20%{
+        visibility: hidden;
+        
+    }
+
+    40%{
+        visibility: hidden;
+    }
+
+    60%{
+        visibility: hidden;
+    }
+
+    80%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes eight_clock
+{
+    0%{
+        visibility: visible;
+    }
+    97%{
+        
+    }
+    98%{
+        
+    }
+    99%{
+        
+        transform: scale(1.2);
+        
+    }
+
+    100%
+    {
+        visibility: visible;
+    }
+}
+
+@keyframes bellRing{
+    0%{visibility: visible;
+       
+        transform: rotate(90deg);
+        
+    }
+    20%{transform: rotate(-90deg);}
+    40%{transform: rotate(90deg);}
+    60%{transform: rotate(-90deg);}
+    80%{transform: rotate(90deg);}
+    100%{transform: rotate(-90deg);}
+    
+}
+@keyframes subject{
+    0%{}
+    50%{
+        visibility:hidden;
+        
+    }
+    100%{
+        visibility: visible;
+    }
+}
