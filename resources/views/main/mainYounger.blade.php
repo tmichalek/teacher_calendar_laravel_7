@@ -1,4 +1,4 @@
-@extends('layouts_Y_students.mainlayout')
+@extends('layouts.mainlayout')
 
 
 

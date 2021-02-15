@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomePageController@index')->name('main');
 
-Route::get('/', 'YoungerStudents\MainController@index')->name('main.page');
+Route::get('/uczen', 'YoungerStudents\MainController@index')->name('main.youngerMain');

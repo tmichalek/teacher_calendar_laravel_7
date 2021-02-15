@@ -1,0 +1,49 @@
+.mainconteneer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 60vh;
+    height: 50vh;
+    
+   .teacher, .student {
+       text-decoration: none;
+        display: block;
+        color: white;
+        height: 45%;
+        width: 45%;
+        font-size: 25px;
+        background-color: rgb(91, 122, 207);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px double rgb(82, 99, 119);
+
+        i{
+            padding: 5px;
+        }
+    
+        
+    }
+
+   
+    .teacher:hover{
+        background-color: rgb(44, 42, 42);
+        transform: scale(1.1);
+    }
+    
+    .student:hover {
+        background-color: rgb(44, 42, 42);
+        transform: scale(1.1);
+    }
+
+   
+}
+
+
+
+
+

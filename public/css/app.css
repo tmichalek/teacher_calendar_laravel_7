@@ -17088,6 +17088,48 @@ a.text-dark:focus {
   }
 }
 
+.mainconteneer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vh;
+  height: 50vh;
+}
+
+.mainconteneer .teacher,
+.mainconteneer .student {
+  text-decoration: none;
+  display: block;
+  color: white;
+  height: 45%;
+  width: 45%;
+  font-size: 25px;
+  background-color: #5b7acf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px double #526377;
+}
+
+.mainconteneer .teacher i,
+.mainconteneer .student i {
+  padding: 5px;
+}
+
+.mainconteneer .teacher:hover {
+  background-color: #2c2a2a;
+  transform: scale(1.1);
+}
+
+.mainconteneer .student:hover {
+  background-color: #2c2a2a;
+  transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
