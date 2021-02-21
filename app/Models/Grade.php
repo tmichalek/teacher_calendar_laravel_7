@@ -10,7 +10,7 @@ class Grade extends Model
 
     public function student()
 {
-    return $this->hasMany('App/Models/Student', 'id_student');
+    return $this->hasMany('App\Models\Student', 'id_student');
 }
 
     public function teacher()

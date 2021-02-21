@@ -11,12 +11,12 @@ class Rating extends Model
 
     public function rate()
     {
-        return $this->belongsToMany('App/Models/Rate', 'id_rate');
+        return $this->belongsToMany('App\Models\Rate', 'id_rate');
     }
 
     public function subject()
     {
-        return $this->belongsToMany('App/Models/Subject', 'id_subject');
+        return $this->belongsToMany('App\Models\Subject', 'id_subject');
     }
 
     public function grade()

@@ -10,6 +10,6 @@ class Rate extends Model
 
     public function rating()
     {
-        return $this->belongsToMany('App/Models/Rating', 'id_rating');
+        return $this->belongsToMany('App\Models\Rating', 'id_rating');
     }
 }

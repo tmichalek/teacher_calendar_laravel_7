@@ -10,6 +10,6 @@ class Days_of_week extends Model
 
     public function schedule()
     {
-        return $this->belongsToMany('App/Models/Schedule', 'id_schedule');
+        return $this->belongsToMany('App\Models\Schedule', 'id_schedule');
     }
 }

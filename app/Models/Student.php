@@ -11,7 +11,7 @@ class Student extends Model
 
     public function grade()
     {
-        return $this->belongsTo('App/Models/Grade', 'id_grade');
+        return $this->belongsTo('App\Models\Grade', 'id_grade');
     }
 
     public function rating()

@@ -10,7 +10,7 @@ class Schedule extends Model
 
     public function days_of_week()
     {
-        return $this->belongsToMany('App/Models/Days_of_Week', 'id_days_of_week');
+        return $this->belongsToMany('App\Models\Days_of_Week', 'id_days_of_week');
     }
 
     public function lesson_hours()

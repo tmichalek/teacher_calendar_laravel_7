@@ -10,11 +10,11 @@ class Subject extends Model
 
     public function teacher()
     {
-        return $this->belongsToMany('App/Models/Teacher', 'id_teacher');
+        return $this->belongsToMany('App\Models\Teacher', 'id_teacher');
     }
 
     public function rating()
     {
-        return $this->belongsToMany('App/Models/Rating', 'id_rating');
+        return $this->belongsToMany('App\Models\Rating', 'id_rating');
     }
 }
