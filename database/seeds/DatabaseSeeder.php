@@ -26,7 +26,8 @@ class DatabaseSeeder extends Seeder
             TeacherSubjectSeeder::class,
             RateSeeder::class,
             RatingSeeder::class,
-            ScheduleSeeder::class
+            ScheduleSeeder::class,
+            RoleSeeder::class,
 
              ]);
     }
