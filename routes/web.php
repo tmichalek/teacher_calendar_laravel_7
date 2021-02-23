@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,12 @@ Auth::routes();
 
 Route::get('/', 'HomePageController@index')->name('main');
 
-Route::get('/uczen', 'YoungerStudents\MainController@index')->name('main.youngerMain');
+Route::group(['prefix'=>'uczen',
+              'namespace'=>'Students',
+              'middleware'=>['auth', 'students']
+
+            ],function () {
+    
+    Route::get('/I-III', 'YoungerStudentController@index')->name('youngerMain');
+    Route::get('/IV-VII', 'OlderStudentController@index')->name('olderMain');
+});

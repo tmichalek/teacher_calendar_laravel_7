@@ -26,26 +26,23 @@ class StudentRedirect
       $q->where('id',Auth::user()->id);
       })->get()->pluck('role');
 
-  //dd(trim($userRole[0]));
+ //dd(trim($userRole[0]));
   
+     // dd(session());
+      $user=trim($userRole[0]);
 
+      if ($user !="Ystudent")
+      {
+        return redirect()->route('olderMain');   
+      }
 
-   if(trim($userRole[0]) ==="Ystudent"){
-      
-      
-      return $next($request);
-    }
-   
+//    if($user !=="Ystudent" || $user!=="Ostudent")
+//    {
+   //$request->session()->flush();
+//     return redirect()->route('main');   
+//     }
     
-    elseif(trim($userRole[0]) ==="Ostudent"){
 
-      return '';
-
-    }
-  
-        else {
-          return redirect()->back();
-        }
-        
+        return $next($request);
     }
 }

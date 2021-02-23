@@ -27,20 +27,26 @@ body{
            padding-left: 4px;
         //    display: flex;
         //    align-items:flex-end;
-        i{
+       i{
+           text-decoration: none;
             padding: 2px;
         }
         
         }
 
         .login{
+
+            
+            
             width: 45%;
             list-style-type: none;
             display: flex;
+            flex-direction: row;
             justify-content:flex-end;
             align-items: center;
             padding-right: 6px;
-            i{
+            li, a{
+                color: white;
                 padding: 2px;
             }
         }
@@ -75,7 +81,7 @@ body{
             div{
                 visibility: hidden;
                 padding: 5px;
-                animation: subject 5s 3s forwards;
+                animation: subject 4s 1s forwards;
             }
             
         }

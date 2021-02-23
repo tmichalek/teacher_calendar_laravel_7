@@ -1,0 +1,41 @@
+[33mcommit d12e76383b1c4a47823f3463f964eac3e9ce1f25[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Tomasz Michałek <2355@student.ujw.pl>
+Date:   Mon Feb 15 21:24:21 2021 +0100
+
+    Add main page
+
+[33mcommit 3cfbf195fa06a63c69d73b06a2ed1310daf2bef0[m
+Author: Tomasz Michałek <2355@student.ujw.pl>
+Date:   Sun Feb 14 14:02:00 2021 +0100
+
+    Add main view for younger students
+
+[33mcommit 48ccdc6f8426caa5411412cc0256a4d558eeb768[m
+Author: Tomasz Michałek <2355@student.ujw.pl>
+Date:   Sun Feb 14 13:59:50 2021 +0100
+
+    Change teacher and students factories and seeds
+
+[33mcommit 45a724d600c0ce7240df2583b682fd4a1c1186e8[m
+Author: Tomasz Michałek <2355@student.ujw.pl>
+Date:   Sun Feb 14 13:57:12 2021 +0100
+
+    Change teacher and student model after mgrations
+
+[33mcommit e95e5dad9431e87730330c1bbf4af4820ef1af00[m
+Author: Tomasz Michałek <2355@student.ujw.pl>
+Date:   Sun Feb 14 13:54:44 2021 +0100
+
+    Add userKind column to teacher an students table and foreign key to student table referenced to users table
+
+[33mcommit 46078e2eaf519ac80e546c1b5308b67ce573fd13[m
+Author: Tomasz Michałek <2355@student.ujw.pl>
+Date:   Tue Feb 2 19:53:22 2021 +0100
+
+    Added factories and seeders
+
+[33mcommit e8b7041bafeba95164373fc1828ca9608fa924f7[m
+Author: Tomasz Michałek <2355@student.ujw.pl>
+Date:   Sun Jan 31 18:16:19 2021 +0100
+
+    Added migrations and models

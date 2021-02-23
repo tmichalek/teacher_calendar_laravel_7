@@ -13,8 +13,21 @@
 <ul class="login">
     @if (Auth::check())
         <li>{{Auth::user()->name}}</li>
+
     
-        <li>WYLOGUJ<i class="fas fa-sign-out-alt"></i></li>
+      <a  href="{{ route('logout') }}"
+       onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();"
+        {{ __('Logout') }}>
+         <li>WYLOGUJ<i class="fas fa-sign-out-alt"></i></li>
+        
+            
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+
     
     @else
     <li>ZALOGUJ<i class="fas fa-sign-in-alt"></i></li>

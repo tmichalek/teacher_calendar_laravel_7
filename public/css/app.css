@@ -17156,6 +17156,7 @@ body .navbar_top .menuItem {
 }
 
 body .navbar_top .menuItem i {
+  text-decoration: none;
   padding: 2px;
 }
 
@@ -17163,12 +17164,15 @@ body .navbar_top .login {
   width: 45%;
   list-style-type: none;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding-right: 6px;
 }
 
-body .navbar_top .login i {
+body .navbar_top .login li,
+body .navbar_top .login a {
+  color: white;
   padding: 2px;
 }
 
@@ -17202,8 +17206,8 @@ body .board .menu {
 body .board .menu div {
   visibility: hidden;
   padding: 5px;
-  -webkit-animation: subject 5s 3s forwards;
-          animation: subject 5s 3s forwards;
+  -webkit-animation: subject 4s 1s forwards;
+          animation: subject 4s 1s forwards;
 }
 
 body .desk1 {
