@@ -22,12 +22,13 @@ Auth::routes();
 
 Route::get('/', 'HomePageController@index')->name('main');
 
+
 Route::group(['prefix'=>'uczen',
               'namespace'=>'Students',
-              'middleware'=>['auth', 'students']
+              'middleware'=>['auth']
 
             ],function () {
     
-    Route::get('/I-III', 'YoungerStudentController@index')->name('youngerMain');
-    Route::get('/IV-VII', 'OlderStudentController@index')->name('olderMain');
+    Route::get('/I-III', 'YoungerStudentController@index')->name('youngerMain')->middleware('Ystudents');
+    Route::get('/IV-VII', 'OlderStudentController@index')->name('olderMain')->middleware('Ostudents');
 });

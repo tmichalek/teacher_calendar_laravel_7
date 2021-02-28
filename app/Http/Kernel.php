@@ -44,9 +44,12 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
-        'students'=>[
-            StudentRedirect::class,
-        ]
+        'Ystudents'=>[
+            \App\Http\Middleware\YoungerStudentRedirect::class,
+        ],
+        'Ostudents'=>[
+            \App\Http\Middleware\OlderStudentRedirect::class,
+        ],
     ];
 
     /**

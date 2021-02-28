@@ -37335,6 +37335,8 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./student */ "./resources/js/student.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37379,6 +37381,33 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/student.js":
+/*!*********************************!*\
+  !*** ./resources/js/student.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var studentA = document.querySelector('.student');
+var teacherA = document.querySelector('.teacher');
+var studentYA = document.querySelector('.studentY');
+var studentOA = document.querySelector('.studentO');
+var studTeachCont = document.querySelector('.mainconteneer');
+var studLink = document.querySelector('.students_links');
+studentA.addEventListener('click', function () {
+  teacherA.classList.toggle('hidden');
+  studTeachCont.style.justifyContent = 'flex-start';
+  studentA.classList.toggle('hidden_deley');
+  studLink.classList.toggle('visibility');
+});
+teacherA.addEventListener('click', function () {
+  studentA.classList.toggle('hidden');
+  studTeachCont.style.justifyContent = 'flex-end';
+  teacherA.classList.toggle('hidden_deley'); //studLink.classList.toggle('visibility');
+});
 
 /***/ }),
 

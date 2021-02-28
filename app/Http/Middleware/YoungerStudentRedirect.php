@@ -9,7 +9,8 @@ use App\Models\Role;
 
 use App\User;
 
-class StudentRedirect
+
+class YoungerStudentRedirect
 {
     /**
      * Handle an incoming request.
@@ -26,21 +27,12 @@ class StudentRedirect
       $q->where('id',Auth::user()->id);
       })->get()->pluck('role');
 
- //dd(trim($userRole[0]));
-  
-     // dd(session());
       $user=trim($userRole[0]);
 
       if ($user !="Ystudent")
       {
-        return redirect()->route('olderMain');   
+        return redirect()->route('main')->with('message', 'nie masz uprawnień do logowania do strony dla młodszych uczniów');   
       }
-
-//    if($user !=="Ystudent" || $user!=="Ostudent")
-//    {
-   //$request->session()->flush();
-//     return redirect()->route('main');   
-//     }
     
 
         return $next($request);
